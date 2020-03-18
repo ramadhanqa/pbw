@@ -1,0 +1,47 @@
+.navbar {
+  height: 35px;
+}
+
+.navbar p {
+  color: #b6b6b6;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.nav2 {
+  background-color: white;
+  padding-top: 40px;
+  height: 110px;
+  font-size: 20px;
+  color: black;
+  padding-right: 90px;
+}
+
+@media (min-width: 768px) {
+  .nav2 .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.nav2 a.menu:after, .nav2 .dropdown-toggle:after {
+  content: none;
+}
+
+.nav2 .navbar-brand {
+  padding-left: 180px;
+}
+
+.carousel {
+  height: 500px;
+  width: 100%;
+}
+
+.content-why {
+  padding-top: 50px;
+  color: #06c1f0;
+}
+
+.content-why h4 {
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

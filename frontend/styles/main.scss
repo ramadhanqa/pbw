@@ -1,0 +1,45 @@
+// navbarinfo
+.navbar{
+    height: 35px;
+    p{
+        color: rgb(182, 182, 182);
+        padding-top: 10px;
+        font-size: 13px;
+    }
+}
+// navbarmenu
+.nav2{
+    background-color: white;
+    padding-top: 40px;
+    height: 110px;
+    font-size: 20px;
+    color: black;
+    padding-right: 90px;
+    @media (min-width: 768px) {
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    }
+    a.menu:after, .dropdown-toggle:after {
+        content: none;
+        }
+    .navbar-brand{
+        
+        
+        padding-left: 180px;
+    }
+}
+// jumbotron
+.carousel {
+    height: 500px;
+    width: 100%;
+  }
+//why us
+.content-why{
+    padding-top: 50px;
+    
+    color: rgb(6, 193, 240);
+    h4{
+        font-weight: 700;
+    }
+}

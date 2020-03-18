@@ -1,0 +1,5 @@
+css : 
+folder script -> main.js
+folder styles -> main.scss
+wacth live 
+go live 
