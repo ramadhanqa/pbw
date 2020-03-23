@@ -79,6 +79,15 @@
   color: #ffffff;
 }
 
+.rating p {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.rating .item {
+  padding-left: 40px;
+}
+
 .footer {
   height: 65px;
   width: 100%;
