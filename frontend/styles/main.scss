@@ -36,10 +36,61 @@
   }
 //why us
 .content-why{
-    padding-top: 50px;
+    padding-top: 5px;
     
     color: rgb(6, 193, 240);
     h4{
         font-weight: 700;
+        padding-bottom: 20px;
+    }
+}
+
+// section-stats
+.section-stats{
+    padding-bottom: 30px;
+    .stats-detail{
+    }
+    p{
+        margin-top: -20px;
+        margin-left: 33px;  
+        font-weight: 700;
+
+    }
+}
+//section-katalog
+.section-katalog{
+    .stats-katalog{
+        margin-right: -20px;
+        margin-left: -30px;
+        padding-bottom: 50px;
+    }
+    h5{
+        margin-left: 60px;  
+        font-weight: 700;
+        
+    }
+}
+.card-right{
+    background-color: rgb(13, 209, 209);
+    margin-left: 50px;
+    margin-right: 20PX;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    h4{
+        
+    }
+}
+// footer
+.footer{
+    height: 65px;
+    width: 100%;
+    background-color: #2e2d2d;
+    p{
+        color: rgb(182, 182, 182);
+        padding-top: 10px;
+        font-size: 13px;
     }
 }

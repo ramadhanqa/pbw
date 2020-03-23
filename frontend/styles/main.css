@@ -37,11 +37,56 @@
 }
 
 .content-why {
-  padding-top: 50px;
+  padding-top: 5px;
   color: #06c1f0;
 }
 
 .content-why h4 {
   font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.section-stats {
+  padding-bottom: 30px;
+}
+
+.section-stats p {
+  margin-top: -20px;
+  margin-left: 33px;
+  font-weight: 700;
+}
+
+.section-katalog .stats-katalog {
+  margin-right: -20px;
+  margin-left: -30px;
+  padding-bottom: 50px;
+}
+
+.section-katalog h5 {
+  margin-left: 60px;
+  font-weight: 700;
+}
+
+.card-right {
+  background-color: #0dd1d1;
+  margin-left: 50px;
+  margin-right: 20PX;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+
+.footer {
+  height: 65px;
+  width: 100%;
+  background-color: #2e2d2d;
+}
+
+.footer p {
+  color: #b6b6b6;
+  padding-top: 10px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */
