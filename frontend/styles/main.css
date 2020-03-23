@@ -1,8 +1,9 @@
-.navbar {
+.head {
   height: 35px;
+  background-color: #2e2d2d;
 }
 
-.navbar p {
+.head p {
   color: #b6b6b6;
   padding-top: 10px;
   font-size: 13px;
@@ -10,7 +11,7 @@
 
 .nav2 {
   background-color: white;
-  padding-top: 40px;
+  padding-top: 10px;
   height: 110px;
   font-size: 20px;
   color: black;
@@ -86,7 +87,7 @@
 
 .footer p {
   color: #b6b6b6;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */
