@@ -103,4 +103,20 @@
 .card-testimoni {
   background-color: #0dd1d1;
 }
+
+.section-regist-content {
+  height: 810px;
+  background: black;
+}
+
+.section-content-header .page-header {
+  margin-bottom: 120px;
+}
+
+.section-content-header .page-header .form-header {
+  font-weight: bold;
+
+  font-weight: 100;
+
+}
 /*# sourceMappingURL=main.css.map */
