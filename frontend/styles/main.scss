@@ -112,6 +112,23 @@
 // map
 .card-testimoni{
     background-color: rgb(13, 209, 209);
+    color: #ffffff;
+    padding-bottom: 50px;
+    h3{
+        padding-top: 20px;
+        padding-left: 20px;
+            padding-right: 20px;
+    }
+    
+    .jumb-testimoni{
+        height: 100%;
+        
+        .carousel-item{
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+    }
     
 }
 .section-regist-content{
@@ -133,4 +150,19 @@
 .page-content{
        margin-bottom: 120px;
    
+}
+
+//One Dat Trip
+.one{
+    margin-top: 20px;
+}
+.textmain{
+    margin-top: 40px;
+    .profile-text-main{
+        margin-top: 20px;
+        margin-left: 130px;
+    }
+}
+.three{
+    padding-top: 20px;
 }
