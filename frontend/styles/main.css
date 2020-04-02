@@ -1,3 +1,5 @@
+
+
 .head {
   height: 35px;
   background-color: #2e2d2d;
@@ -9,27 +11,16 @@
   font-size: 13px;
 }
 
-.nav2 {
+.navbar {
   background-color: white;
   padding-top: 10px;
   height: 110px;
   font-size: 20px;
   color: black;
-  padding-right: 90px;
 }
 
-@media (min-width: 768px) {
-  .nav2 .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-.nav2 a.menu:after, .nav2 .dropdown-toggle:after {
-  content: none;
-}
-
-.nav2 .navbar-brand {
-  padding-left: 180px;
+.navbar-brand {
+  padding-left: 120px;
 }
 
 .carousel {
@@ -90,7 +81,7 @@
 
 .footer {
   height: 65px;
-  width: 100%;
+  width: 102%;
   background-color: #2e2d2d;
 }
 
@@ -157,5 +148,8 @@
 
 .three {
   padding-top: 20px;
+}
+.main{
+  padding-left: 150px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking | Paket Tour Wisata Malang Bromo Murah Terbaik</title>
  
+    <!-- animated.css bootnav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- css ditaruh di atas , bagian head -->
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css"/>
+    <!-- bootnav -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootnavbar.css">
     <!-- styleing css go lice sass -->
     <link rel="stylesheet" href="frontend/styles/main.css">
     <!-- icon -->
@@ -18,68 +22,135 @@
       <p class="">Office : 03415051441 | WhatsApp : 08113507073 | Mobile : 08113507073</p>
     </div>
     <!-- navbar menu -->
-    <nav class="navbar nav2 navbar-expand-lg navbar-light sticky-top ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="main_navbar">
+      <a class="navbar-brand" href="#">
+        <img src="frontend/images/logo.png" width="330" height="60" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand" href="#">
-                <img src="frontend/images/logo.png" width="330" height="60" alt="">
-              </a>
-          <ul class="navbar-nav font-weight-normal mr-4 ml-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-4 ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Profil Kami <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Profil Kami</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Tour Malang Bromo<span class="sr-only">(current)</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="nav-item dropdown">
+                              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false">
+                                  Paket Tour 1D
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                  <li><a class="dropdown-item" href="#">Paket Tour Bromo Midnight</a></li>
+                                  <li><a class="dropdown-item" href="#">Paket Tour Bromo Kawah Ijen</a></li>
+                                  <li><a class="dropdown-item" href="#">Paket Tour Menjangan& Tabuhan</a></li>
+                                  <li><a class="dropdown-item" href="#">Open Trip Bromo</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Paket Tour 2D1N
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">Paket Tour Bromo Inap</a></li>
+                                <li><a class="dropdown-item" href="#">Paket Tour Bromo & Kota Batu</a></li>
+                                <li><a class="dropdown-item" href="#">Paket Tour Kawah Ijen & Baluran</a></li>
+                                <li><a class="dropdown-item" href="#">Paket Tour Ijen & Menjangan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Paket Tour 3D2N
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                              <li><a class="dropdown-item" href="#">Paket Tour Bromo & Malang Batu</a></li>
+                              <li><a class="dropdown-item" href="#">Paket Tour Bromo Ijen & Baluran</a></li>
+                              <li><a class="dropdown-item" href="#">Paket Tour Baluran & Ijen</a></li>
+                              <li><a class="dropdown-item" href="#">Reques Trip</a></li>
+                          </ul>
+                      </li>
+                  </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tour Malang Bromo
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Tour Banyuwangi<span class="sr-only">(current)</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        One Day Tour
+                    </a>
+                    <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="#">Treking Kawah Ijen</a></li>
+                        <li><a class="dropdown-item" href="#">Explore Pulau Menjangan dan Tabuhan</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Paket Tour 2 Hari 1 Malam
+                  </a>
+                  <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="#">Pesona Kawah Ijen</a></li>
+                      <li><a class="dropdown-item" href="#">Pesona Banyuwangi</a></li>
+                  </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tour Banyuwangi
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Paket Tour 3 Hari 2 Malam
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="#">Explore Banyuwangi</a></li>
+                    <li><a class="dropdown-item" href="#">Keliling Banyuwangi</a></li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Contact Us
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Paket Tour 4 Hari 3 Malam
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <input class="form-control form-control-sm mr-0 w-0" type="text" placeholder="Search"
-    aria-label="Search">
-                </div>
-              </li>
-          </ul>
-        </div>
-      </nav>
+                <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="#">Menjelajahi Banyuwangi</a></li>
+                    <li><a class="dropdown-item" href="#">Exotisca Banyuwangi</a></li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+            <!-- Navbarbaru -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Booking</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+              <ul class="dropdown-menu left" aria-labelledby="navbarDropdown">
+                <input class="form-control form-control-sm mr-0 w-0" type="text" placeholder="Search" aria-label="Search">
+              </ul>
+            </li>
+          </ul>        
+      </div>
+  </nav>
       <!-- isi -->
       <form role="form" class="form-horizontal form-isi" >
         <div class="form-group">
@@ -202,7 +273,22 @@
 
     <!-- script jquery, file download di jquery harus ditaruh di atas boostrap -->
     <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- js di taruh di bagian body , link script -->
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+
+    <!-- bootnavbar -->
+    <script src="frontend/libraries/bootstrap/js/bootnavbar.js" ></script>
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+              //options
+
+              //animation: false
+
+            });
+        })
+    </script>
 </body>
 </html>
