@@ -11,11 +11,11 @@
 
 .navbar {
   background-color: white;
-  padding-top: 10px;
-  height: 110px;
+  padding: 20px 0 20px;
+  
   font-size: 20px;
   color: black;
-  padding-right: 90px;
+  padding-right: 120px;
 }
 
 .navbar a.menu:after,.dropdown-toggle:after {
@@ -95,7 +95,7 @@
 }
 
 .card-testimoni {
-  background-color: #0dd1d1;
+  background-color: #01a3a3;
   color: #ffffff;
   padding-bottom: 50px;
 }
