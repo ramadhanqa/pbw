@@ -1,13 +1,12 @@
 .head {
-    height: 35px;
+    padding-top: 10px;
     background-color: #2e2d2d;
+    p{
+    color: #b6b6b6;
+    
+    font-size: 13px;}
   }
   
-  .head p {
-    color: #b6b6b6;
-    padding-top: 10px;
-    font-size: 13px;
-  }
   
   .navbar {
     background-color: white;
