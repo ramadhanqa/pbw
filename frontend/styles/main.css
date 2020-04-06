@@ -12,17 +12,16 @@
 .navbar {
   background-color: white;
   padding: 20px 0 20px;
-  
   font-size: 20px;
   color: black;
   padding-right: 120px;
 }
 
-.navbar a.menu:after,.dropdown-toggle:after {
+.navbar a.menu:after, .dropdown-toggle:after {
   content: none;
 }
 
-.navbar{
+.navbar {
   padding-left: 110px;
 }
 
@@ -63,7 +62,7 @@
 }
 
 .card-right {
-  background-color: #0dd1d1;
+  background-color: #01a3a3;
   margin-left: 50px;
   margin-right: 20PX;
   padding-top: 20px;

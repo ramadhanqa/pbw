@@ -1,79 +1,69 @@
-// Index
-// navbarinfo
-.head{
+.head {
     height: 35px;
     background-color: #2e2d2d;
-    p{
-        color: rgb(182, 182, 182);
-        padding-top: 10px;
-        font-size: 13px;
-    }
-}
-// navbarmenu
-.nav2{
-    background-color: white;
+  }
+  
+  .head p {
+    color: #b6b6b6;
     padding-top: 10px;
-    height: 110px;
+    font-size: 13px;
+  }
+  
+  .navbar {
+    background-color: white;
+    padding: 20px 0 20px;
+    
     font-size: 20px;
     color: black;
-    padding-right: 90px;
-    @media (min-width: 768px) {
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-    }
-    a.menu:after, .dropdown-toggle:after {
-        content: none;
-        }
-    .navbar-brand{
-        
-        
-        padding-left: 180px;
-    }
-}
-// jumbotron
-.carousel {
+    padding-right: 120px;
+  }
+  
+  .navbar a.menu:after,.dropdown-toggle:after {
+    content: none;
+  }
+  
+  .navbar{
+    padding-left: 110px;
+  }
+  
+  .carousel {
     height: 500px;
     width: 100%;
   }
-//why us
-.content-why{
+  
+  .content-why {
     padding-top: 5px;
-    
-    color: rgb(6, 193, 240);
-    h4{
-        font-weight: 700;
-        padding-bottom: 20px;
-    }
-}
-
-// section-stats
-.section-stats{
+    color: #06c1f0;
+  }
+  
+  .content-why h4 {
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  
+  .section-stats {
     padding-bottom: 30px;
-    .stats-detail{
-    }
-    p{
-        margin-top: -20px;
-        margin-left: 33px;  
-        font-weight: 700;
-
-    }
-}
-//section-katalog
-.section-katalog{
-    .stats-katalog{
-        margin-right: -20px;
-        margin-left: -30px;
-        padding-bottom: 50px;
-    }
-    h5{
-        margin-left: 60px;  
-        font-weight: 700;
-        
-    }
-}
-.card-right{
-    background-color: rgb(13, 209, 209);
+  }
+  
+  .section-stats p {
+    margin-top: -20px;
+    margin-left: 33px;
+    font-weight: 700;
+  }
+  
+  .section-katalog .stats-katalog {
+    margin-right: -20px;
+    margin-left: -30px;
+    padding-bottom: 50px;
+  }
+  
+  .section-katalog h5 {
+    margin-left: 60px;
+    font-weight: 700;
+  }
+  
+  .card-right {
+    background-color: #01a3a3;
     margin-left: 50px;
     margin-right: 20PX;
     padding-top: 20px;
@@ -81,88 +71,85 @@
     padding-right: 20px;
     padding-bottom: 50px;
     color: #ffffff;
-    h4{
-        
-    }
-}
-// rating
-.rating{
-    p{
-        font-size: 20px;
-        padding-left: 30px;
-    }
-    .item{
-        padding-left: 40px;
-    }
-    
-}
-// footer
-.footer{
+  }
+  
+  .rating p {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  
+  .rating .item {
+    padding-left: 40px;
+  }
+  
+  .footer {
     height: 65px;
     width: 100%;
     background-color: #2e2d2d;
-    p{
-        color: rgb(182, 182, 182);
-        padding-top: 20px;
-        font-size: 13px;
-    }
-}
-
-// profile-kami
-// map
-.card-testimoni{
-    background-color: rgb(13, 209, 209);
+  }
+  
+  .footer p {
+    color: #b6b6b6;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  
+  .card-testimoni {
+    background-color: #01a3a3;
     color: #ffffff;
     padding-bottom: 50px;
-    h3{
-        padding-top: 20px;
-        padding-left: 20px;
-            padding-right: 20px;
-    }
-    
-    .jumb-testimoni{
-        height: 100%;
-        
-        .carousel-item{
-            padding-left: 20px;
-            padding-right: 20px;
-            
-        }
-    }
-    
-}
-.section-regist-content{
+  }
+  
+  .card-testimoni h3 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .card-testimoni .jumb-testimoni {
+    height: 100%;
+  }
+  
+  .card-testimoni .jumb-testimoni .carousel-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .section-regist-content {
     height: 810px;
     background: black;
-}
-
-.form-isi{
+  }
+  
+  .form-isi {
     width: 50%;
     padding-left: 230px;
     padding-bottom: 120px;
-    .form-nama{
-        font-weight: bold;
-        padding-bottom: 10px;
-        font-size: 30px;
-    }
-}
-
-.page-content{
-       margin-bottom: 120px;
-   
-}
-
-//One Dat Trip
-.one{
+  }
+  
+  .form-isi .form-nama {
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  .page-content {
+    margin-bottom: 120px;
+  }
+  
+  .one {
     margin-top: 20px;
-}
-.textmain{
+  }
+  
+  .textmain {
     margin-top: 40px;
-    .profile-text-main{
-        margin-top: 20px;
-        margin-left: 130px;
-    }
-}
-.three{
+  }
+  
+  .textmain .profile-text-main {
+    margin-top: 20px;
+    margin-left: 130px;
+  }
+  
+  .three {
     padding-top: 20px;
-}
+  }
+  /*# sourceMappingURL=main.css.map */
