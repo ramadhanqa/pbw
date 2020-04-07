@@ -415,9 +415,14 @@
       <form action="#" id="rating-form-4-1">
       <p>Nilai Kualitas Konten</p>
       <div class="item">
-      <input type="hidden" value="f" class="rating-item-4-1" id="hidden-rating-item-id-1">
-      <input type="button" value="Kirim rating" class="btn btn-default save-rating" id="saveBtn-4-1">
-      <input type="hidden" name="sequence" value="1">
+        <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+        <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+        <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+        <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+        <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+        <br/>
+        <textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Enter your review"></textarea>
+        <button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-default save-rating">Submit</button>
     </form>
     </div>
   </div>
@@ -447,5 +452,37 @@
             });
         })
     </script>
+    <script>
+      var count;
+      
+      function starmark(item)
+      {
+      count=item.id[0];
+      sessionStorage.starRating = count;
+      var subid= item.id.substring(1);
+      for(var i=0;i<5;i++)
+      {
+      if(i<count)
+      {
+      document.getElementById((i+1)+subid).style.color="orange";
+      }
+      else
+      {
+      document.getElementById((i+1)+subid).style.color="black";
+      }
+      
+      
+      }
+      
+      }
+      
+      function result()
+      {
+      //Rating : Count
+      //Review : Comment(id)
+      alert("Rating : "+count+"\nReview : "+document.getElementById("comment").value);
+      }
+      
+      </script>
 </body>
 </html>
