@@ -3,3 +3,6 @@ folder script -> main.js
 folder styles -> main.scss
 wacth live 
 go live 
+
+instagram feed : https://www.youtube.com/watch?v=zw26D1Ko-3w
+https://apps.elfsight.com/panel/applications/instashow/

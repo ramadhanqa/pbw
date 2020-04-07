@@ -70,6 +70,7 @@
     padding-right: 20px;
     padding-bottom: 50px;
     color: #ffffff;
+    height: 100%;
   }
   
   .rating p {
@@ -97,6 +98,17 @@
     background-color: #01a3a3;
     color: #ffffff;
     padding-bottom: 50px;
+    height: 100%;
+  }
+
+  .card-instgram{
+    
+    p{
+      float: right;
+      margin-top: -40px;
+      margin-right: 650px;
+    }
+    
   }
   
   .card-testimoni h3 {
