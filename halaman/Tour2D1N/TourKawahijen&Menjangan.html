@@ -365,8 +365,8 @@
     <!-- Rating -->
     <div class="row rating">
       <form action="#" id="rating-form-4-1">
-        <p style="font-weight: lighter; margin-left: -12px;">Nilai Kualitas Konten</p>
-      <div class="item">
+        <p id="commentt" style="font-weight: lighter; margin-left: -12px;">Nilai Kualitas Konten</p>
+      <div id="starmark2" class="item">
         <span style="font-weight: bold; margin-left: -22px;">Berikan Rating</span>
         <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:12px;cursor:pointer;"  class="fa fa-star checked"></span>
         <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:12px;cursor:pointer;" class="fa fa-star "></span>
@@ -432,11 +432,17 @@
       
       function result()
       {
+        
       //Rating : Count
       //Review : Comment(id)
-      alert("Rating : "+count+"\nReview : "+document.getElementById("comment").value);
+      document.getElementById("commentt").innerHTML = "√Terima Kasih Telah Memberi Nilai : "+count+"/5";
+      var x = document.getElementById("starmark2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
       }
-      
       </script>
 </body>
 </html>

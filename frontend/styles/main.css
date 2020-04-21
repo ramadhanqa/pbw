@@ -91,6 +91,7 @@
   color: #b6b6b6;
   padding-top: 20px;
   font-size: 13px;
+  color: black;
 }
 
 .card-testimoni {
@@ -153,6 +154,11 @@
 .textmain .profile-text-main {
   margin-top: 20px;
   margin-left: 130px;
+}
+
+.textmain .profile-text-main .tab-content {
+  margin-left: 200px;
+  margin-top: -120px;
 }
 
 .three {

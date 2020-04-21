@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Tour Wisata Malang Bromo Murah Terbaik</title>
+
+    <!-- whatsapp -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-6625034e-5a6a-4c5d-a51b-73dca8b2c4f7"></div>
  
     <!-- animated.css bootnav -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -278,8 +282,8 @@
     <!-- Rating -->
     <div class="row rating">
       <form action="#" id="rating-form-4-1">
-      <p style="font-weight: lighter;">Nilai Kualitas Konten</p>
-      <div class="item">
+      <p id="commentt" style="font-weight: lighter;">Nilai Kualitas Konten</p>
+      <div id="starmark2" class="item">
         <span style="font-weight: bold; margin-left: -22px;">Berikan Rating</span>
         <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:12px;cursor:pointer;"  class="fa fa-star checked"></span>
         <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:12px;cursor:pointer;" class="fa fa-star "></span>
@@ -287,8 +291,8 @@
         <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:12px;cursor:pointer;" class="fa fa-star"></span>
         <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:12px;cursor:pointer;" class="fa fa-star"></span>
         <br/>
-       
         <button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px; border-width: 1px; border-color: grey; margin-bottom: 20px; margin-left: -22px;" class="btn btn-default save-rating">Kirim Rating</button>
+      </div>
     </form>
     </div>
   </div>
@@ -297,9 +301,7 @@
   <p class="">© 2015 Jendela Wisata <a href="/halaman/Tour1D/OpenTripBromo.html">Open trip Bromo</a> |<a href="BromoMidnight.html"> Tour Bromo</a> |<a href="BromoMidnight.html"> Paket Wisata Bromo</a> |<a href="/index.html"> Paket Wisata Malang</a> |<a href="/index.html"> Paket Tour Malang Bromo</a> |<a href="/index.html"> Paket Tour Bromo Malang</a> All right reserved.
   </p>
 </div>
-<!-- whatsapp -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-6625034e-5a6a-4c5d-a51b-73dca8b2c4f7"></div>
+
     
     
     <!-- script jquery, file download di jquery harus ditaruh di atas boostrap -->
@@ -347,11 +349,17 @@
       
       function result()
       {
+        
       //Rating : Count
       //Review : Comment(id)
-      alert("Rating : "+count+"\nReview : "+document.getElementById("comment").value);
+      document.getElementById("commentt").innerHTML = "√Terima Kasih Telah Memberi Nilai : "+count+"/5";
+      var x = document.getElementById("starmark2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
       }
-      
       </script>
 </body>
 </html>

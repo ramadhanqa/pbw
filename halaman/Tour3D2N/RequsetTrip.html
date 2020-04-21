@@ -181,15 +181,16 @@
                 <p class="font-weight-bold">Custom Trip</p>
                 <p style="font-weight: lighter;">Custom Trip adalah menggabungkan dari beberapa lokasi wisata dengan jadwal dan destinasi sesuai dengan permintaan yang anda berikan. Dengan mengcustom jadwal anda dapat menentukan sendiri jadwal kedatangan dan kepulangan yang nantinya akan coba kami sesuaikan dengan kondisi lapang.</p>
                 <p style="font-weight: lighter;">Beberapa tahun terakhir antusias wisatawan baik lokal maupun mancanegara sangat tinggi, hal itu dibuktikan semakin banyaknya wisatawan yang mengunjungi destinasi Favorite di Indonesia. Berpacu dalam hal itu, kami Jendela Wisata ingin terus berupaya berprogress dan berinovasi untuk tetap mempertahankan posisi sebagai referensi pertama untuk perjalanan Anda di Jawa Timur dan sekitarnya.</p>
+                
                 <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-detail-tab" data-toggle="tab" href="#nav-detailtrip" role="tab" aria-controls="nav-detailtrip" aria-selected="true">Detail Trip</a>
-                    <a class="nav-item nav-link" id="nav-hargatour-tab" data-toggle="tab" href="#nav-hargatour" role="tab" aria-controls="nav-hargatour" aria-selected="false">Price Trip</a>
-                    <a class="nav-item nav-link" id="nav-termcon-tab" data-toggle="tab" href="#termcond" role="tab" aria-controls="termcond" aria-selected="false">Term Condition</a>
+                  <div class="nav nav-tabs flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-detail-tab" data-toggle="pill" href="#nav-detailtrip" role="tab" aria-controls="nav-detailtrip" aria-selected="true">Detail Trip</a>
+                    <a class="nav-link" id="v-pills-hargatour-tab" data-toggle="pill" href="#nav-hargatour" role="tab" aria-controls="nav-hargatour" aria-selected="false">Price Trip</a>
+                    <a class="nav-link" id="v-pills-termcon-tab" data-toggle="pill" href="#termcond" role="tab" aria-controls="termcond" aria-selected="false">Term Condition</a>
                   </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-detailtrip" role="tabpanel" aria-labelledby="nav-detailtrip-tab">
+                  <div class="tab-pane fade show active" id="nav-detailtrip" role="tabpanel" aria-labelledby="v-pills-detail-tab">
                    <p style="font-weight: lighter;">
                      <strong style="font-weight: bold;">Bagaimana Request Trip?</strong><br>
                       √ Tentukan waktu Kedatangan dan Keberangkatan <br>
@@ -317,8 +318,8 @@
     <!-- Rating -->
     <div class="row rating">
       <form action="#" id="rating-form-4-1">
-        <p style="font-weight: lighter; margin-left: -12px;">Nilai Kualitas Konten</p>
-      <div class="item">
+        <p id="commentt" style="font-weight: lighter; margin-left: -12px;">Nilai Kualitas Konten</p>
+      <div id="starmark2" class="item">
         <span style="font-weight: bold; margin-left: -22px;">Berikan Rating</span>
         <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:12px;cursor:pointer;"  class="fa fa-star checked"></span>
         <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:12px;cursor:pointer;" class="fa fa-star "></span>
@@ -384,11 +385,17 @@
       
       function result()
       {
+        
       //Rating : Count
       //Review : Comment(id)
-      alert("Rating : "+count+"\nReview : "+document.getElementById("comment").value);
+      document.getElementById("commentt").innerHTML = "√Terima Kasih Telah Memberi Nilai : "+count+"/5";
+      var x = document.getElementById("starmark2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
       }
-      
       </script>
 </body>
 </html>
