@@ -156,9 +156,19 @@
   margin-left: 130px;
 }
 
-.textmain .profile-text-main .tab-content {
+.textmain .profile-text-main .tab-pane2 {
   margin-left: 200px;
   margin-top: -120px;
+}
+
+.textmain .profile-text-main .tab-pane3 {
+  margin-top: -250px;
+  margin-left: 200px;
+}
+
+.textmain .profile-text-main .tab-pane4 {
+  margin-top: -230px;
+  margin-left: 200px;
 }
 
 .three {
