@@ -1,3 +1,11 @@
+# PROJECT UTS - UAS PBW
+Nama : Ramadhan Qoridhatul Alfarizi (180441100098)
+       MUHAMMAD HASBUNALLAH AMRIL SOBRI (180441100140)
+
+web yang dicontoh : jendela-wisata.com
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
