@@ -4,14 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 //Modal Request dari user
-use App\Http\Requests\Admin\BookingRequest;
 use Illuminate\Http\Request;
-use App\Booking;
 use App\Packet;
 
+use App\Http\Requests\Admin\PacketRequest;
+
+use App\TourPackage;
 use Illuminate\Support\Str;
 
-class BookingController extends Controller
+class PacketController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,9 +23,14 @@ class BookingController extends Controller
     //mengambil dari model Tour PACKAGE
     public function index()
     {
-        $items = Booking::all();
+        // $items = Booking::all();
 
-        return view('pages.admin.booking.index',[
+        // return view('pages.packet.index',[
+        //     'items' => $items
+        // ]);
+        $items = Packet::all();
+
+        return view('pages.admin.packet.index',[
             'items' => $items
         ]);
     }
@@ -37,8 +43,8 @@ class BookingController extends Controller
     // return pages admin\package-trave\create.blade
     public function create()
     {
-        $packets = Packet::all();
-        return view('pages.admin.booking.create',[
+        $packets = TourPackage::all();
+        return view('pages.admin.packet.create',[
             'packets' => $packets
         ]);
     }
@@ -49,12 +55,12 @@ class BookingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BookingRequest $request)
+    public function store(PacketRequest $request)
     {
         $data = $request->all();
 
-        Booking::create($data);
-        return redirect()->route('booking.index');
+        Packet::create($data);
+        return redirect()->route('packet.index');
     }
 
     /**
@@ -77,9 +83,9 @@ class BookingController extends Controller
     public function edit($id)
     {
         // jika datanya ada akan dimunculin jika ga ada error 404
-        $item = Booking::findOrFail($id);
+        $item = Packet::findOrFail($id);
 
-        return view('pages.admin.booking.edit',[
+        return view('pages.admin.packet.edit',[
             'item' =>$item
         ]);
     }
@@ -91,13 +97,13 @@ class BookingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BookingRequest $request, $id)
+    public function update(PacketRequest $request, $id)
     {
         $data = $request->all();
          //fungsi update dan edit perbedaannya
-        $item = Booking::findOrFail($id);
+        $item = Packet::findOrFail($id);
         $item->update($data);
-        return redirect()->route('booking.index');
+        return redirect()->route('packet.index');
     }
 
     /**
@@ -109,10 +115,10 @@ class BookingController extends Controller
     public function destroy($id)
     {
         //mencari idnya
-        $item = Booking::findOrFail($id);
+        $item = Packet::findOrFail($id);
         //fungsi delete
         $item->delete();
 
-        return redirect()->route('booking.index');
+        return redirect()->route('packet.index');
     }
 }

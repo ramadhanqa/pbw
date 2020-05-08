@@ -19,9 +19,9 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ route('travel-packages.index') }}">
+        <a class="nav-link" href="{{ route('packet.index') }}">
           <i class="fas fa-fw fa-hotel"></i>
-          <span>Paket Travel</span></a>
+          <span>Paket</span></a>
       </li>
 
       <!-- Nav Item - Dashboard -->

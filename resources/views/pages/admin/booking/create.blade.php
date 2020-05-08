@@ -54,9 +54,9 @@
                         <label for="pilihan_trip" style="font-weight: bold; padding-bottom: -15px;">Pilihan Trip:</label>
                         <select name="pilihan_trip" class="form-control" style="font-weight: bold;">
                         <option value="">Pilihan Trip</option>
-                        @foreach ($tour_packages as $tour_package)
-                            <option value="{{ $tour_package->title }}">
-                            {{ $tour_package->title }}
+                        @foreach ($packets as $packet)
+                            <option value="{{ $packet->title }}">
+                            {{ $packet->title }}
                             </option>
                         @endforeach
                         {{-- <option value="">One Day Trip</option>

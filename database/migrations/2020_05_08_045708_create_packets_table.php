@@ -13,9 +13,10 @@ class CreatePacketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('packet', function (Blueprint $table) {
+        Schema::create('packets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreatePacketsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('packet');
+        Schema::dropIfExists('packets');
     }
 }
