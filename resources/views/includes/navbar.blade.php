@@ -118,7 +118,7 @@
               Contact Us
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a href="{{ route('booking.create') }}" class="dropdown-item">Booking</a></li>
+              <li><a href="{{ route('bookings.create') }}" class="dropdown-item">Booking</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
