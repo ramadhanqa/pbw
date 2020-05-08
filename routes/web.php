@@ -20,8 +20,10 @@ Route::get('/', 'HomeController@index' )
 Route::get('/profil', 'ProfilKamiController@index' )
     ->name('profil');
 
-Route::get('/booking', 'BookingController@index' )
-    ->name('booking');
+// Route::get('/booking', 'BookingController@index' )
+//     ->name('booking');
+
+
 
 Route::get('/detail', 'DetailController@index' )
     ->name('detail');
@@ -76,8 +78,20 @@ Route::prefix('admin')
 
         Route::resource('travel-packages', 'TravelPackageController');
         Route::resource('gallery', 'GalleryController');
+        Route::resource('booking', 'BookingController');
 
     });
+
+Route::resource('bookings', 'BookingUserController');
+//peta admin
+// Route::prefix('bookings')
+//     ->group(function(){
+//         Route::get('/', 'BookingUserController@index')
+//             ->name('bookings');
+//         Route::resource('', 'BookingUserController');
+
+//     });
+
 
 Auth::routes(['verify' => true]);
 

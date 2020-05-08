@@ -33,9 +33,9 @@
 
       <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-dollar-sign"></i>
-          <span>Transaksi</span></a>
+        <a class="nav-link" href="{{ route('booking.index') }}">
+          <i class="fas fa-fw fa-book"></i>
+          <span>Booking</span></a>
       </li>
 
     <!-- Divider -->

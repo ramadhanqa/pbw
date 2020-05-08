@@ -77,3 +77,4 @@ untuk images : agar storage ada di public dan terbaca maka dibuatkan folder
 dengan : php artisan storage:link
 
 relasi antar tabel di taruh di kedua model
+
