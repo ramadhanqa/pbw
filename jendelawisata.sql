@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Bulan Mei 2020 pada 11.50
+-- Waktu pembuatan: 09 Bulan Mei 2020 pada 07.39
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.5
 
@@ -123,7 +123,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (34, '2020_05_07_092747_create_bookings_table', 3),
 (35, '2020_05_07_150535_create_packets_table', 4),
 (36, '2020_05_07_150813_create_packets_table', 5),
-(37, '2020_05_08_045708_create_packets_table', 6);
+(37, '2020_05_08_045708_create_packets_table', 6),
+(38, '2020_05_09_033232_create_testimonials_table', 7);
 
 -- --------------------------------------------------------
 
@@ -171,6 +172,29 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `testimonials`
+--
+
+CREATE TABLE `testimonials` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nick` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `testimoni` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `testimonials`
+--
+
+INSERT INTO `testimonials` (`id`, `nick`, `testimoni`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 'Robet', 'sungguh wow', NULL, '2020-05-08 20:46:54', '2020-05-08 20:46:54'),
+(2, 'Amril', 'Uwuuu deh', NULL, '2020-05-08 21:51:42', '2020-05-08 21:51:42');
 
 -- --------------------------------------------------------
 
@@ -296,6 +320,12 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Indeks untuk tabel `testimonials`
+--
+ALTER TABLE `testimonials`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `tour_packages`
 --
 ALTER TABLE `tour_packages`
@@ -346,13 +376,19 @@ ALTER TABLE `galleries`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT untuk tabel `packets`
 --
 ALTER TABLE `packets`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT untuk tabel `testimonials`
+--
+ALTER TABLE `testimonials`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tour_packages`
