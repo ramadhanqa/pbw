@@ -14,13 +14,13 @@ Paket Tour Wisata Malang Bromo Murah Terbaik
     </ol>
         <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="frontend/images/jumbotron1.JPG" alt="First slide">
+            <img class="d-block w-100" src="{{ url('frontend/images/jumbotron1.JPG') }}" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="frontend/images/jumbotron2.JPG" alt="Second slide">
+            <img class="d-block w-100" src="{{ url('frontend/images/jumbotron2.JPG') }}" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="frontend/images/jumbotron3.JPG" alt="Third slide">
+            <img class="d-block w-100" src="{{ url('frontend/images/jumbotron3.JPG') }}" alt="Third slide">
         </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -42,19 +42,19 @@ Paket Tour Wisata Malang Bromo Murah Terbaik
     <div class="container" style="padding-top: 5px;">
         <div id="stats" class="section section-stats row justify-content-center">
         <div class="col-lg-3 col-md-3 stats-detail">
-            <img src="frontend/images/stats-detail/Pelayanan-2-square.gif" width="200" height="200" alt="">
+            <img src="{{ url('frontend/images/stats-detail/Pelayanan-2-square.gif') }}" width="200" height="200" alt="">
             <p>Pelayanan Terbaik</p>
         </div>
         <div class="col-lg-3 col-md-3 stats-detail">
-            <img src="frontend/images/stats-detail/Icon-Fast-Respon-2-1-square.gif" width="200" height="200" alt="">
+            <img src="{{ url('frontend/images/stats-detail/Icon-Fast-Respon-2-1-square.gif') }}" width="200" height="200" alt="">
             <p>Fast Responses</p>
         </div>
         <div class="col-lg-3 col-md-3 stats-detail">
-            <img src="frontend/images/stats-detail/penawaran-186-square.2-2.gif" width="200" height="200" alt="">
+            <img src="{{ url('frontend/images/stats-detail/penawaran-186-square.2-2.gif') }}" width="200" height="200" alt="">
             <p>Cara Booking Mudah</p>
         </div>
         <div class="col-lg-3 col-md-3 stats-detail">
-            <img src="frontend/images/stats-detail/Penawaran-2-1-square2.3.gif" width="200" height="200" alt="">
+            <img src="{{ url('frontend/images/stats-detail/Penawaran-2-1-square2.3.gif') }}" width="200" height="200" alt="">
             <p>Penawaran Harga Terbaik</p>
         </div>
         </div>
@@ -67,32 +67,32 @@ Paket Tour Wisata Malang Bromo Murah Terbaik
     <div class="container">
     <div id="stats" class="section section-katalog row justify-content-center">
         <div class="col-lg-3 col-sm-7 stats-katalog">
-        <a class="katalog" href="../../halaman/Tour3D2N/TourBromo&MalangBatu.html">
-            <img src="frontend/images/katalog/detail1.jpg" width="220" height="220" alt="">
+        <a class="katalog" href="{{ route('BromoMalang') }}">
+            <img src="{{ url('frontend/images/katalog/detail1.jpg') }}" width="220" height="220" alt="">
         </a>
         <h5>Best Seller</h5>
         </div>
         <div class="col-lg-3 col-sm-6 stats-katalog">
-        <a class="katalog" href="../../halaman/Tour2D1N/TourKawahijen&Baluran.html">
-            <img src="frontend/images/katalog/detail2.jpg" width="220" height="220" alt="">
+        <a class="katalog" href="{{ route('TourKawahIjen&Baluran') }}">
+            <img src="{{ url('frontend/images/katalog/detail2.jpg') }}" width="220" height="220" alt="">
         </a>
         <h5>Best Seller</h5>
         </div>
         <div class="col-lg-3 col-sm-6 stats-katalog">
-        <a class="katalog" href="../../halaman/Tour1D/BromoMidnight.html">
-            <img src="frontend/images/katalog/detail3.jpg" width="220" height="220" alt="">
+        <a class="katalog" href="{{ route('TourBromoMidnight') }}">
+            <img src="{{ url('frontend/images/katalog/detail3.jpg') }}" width="220" height="220" alt="">
         </a>
         <h5>Best Seller</h5>
         </div>
         <div class="col-lg-3 col-sm-6 stats-katalog">
-        <a class="katalog" href="../../halaman/Tour2D1N/TourBromoInap.html">
-            <img src="frontend/images/katalog/detail4.jpg" width="220" height="220" alt="">
+        <a class="katalog" href="{{ route('BromoInap') }}">
+            <img src="{{ url('frontend/images/katalog/detail4.jpg') }}" width="220" height="220" alt="">
         </a>
         <h5>Best Seller</h5>
         </div>
         <div class="col-lg-2 col-sm-6 stats-katalog">
-        <a class="katalog" href="../../halaman/Tour3D2N/TourBromo&MalangBatu.html">
-            <img src="frontend/images/katalog/detail5.jpg" width="220" height="220" alt="">
+        <a class="katalog" href="{{ route('BromoMalang') }}">
+            <img src="{{ url('frontend/images/katalog/detail5.jpg') }}" width="220" height="220" alt="">
         </a>
         <h5>Best Seller</h5>
         </div>

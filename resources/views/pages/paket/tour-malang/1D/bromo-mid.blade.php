@@ -181,17 +181,17 @@ Paket Tour Wisata Bromo Malang Murah Terbaik | Paket Tour Wisata Malang Bromo Mu
         <div class="col-lg-4">
           <div class="card-profile">
             <a class="katalog" href="{{ route('BromoBatu') }}">
-              <img src="../../frontend/images/katalog/detail5.jpg" width="280" height="280" alt="">
+              <img src="{{ url('../../frontend/images/katalog/detail5.jpg') }}" width="280" height="280" alt="">
             </a>
           </div>
           <div class="card-profile pt-5">
             <a class="katalog" href="{{ route('BromoMalang') }} ">
-              <img src="../../frontend/images/katalog/detail1.jpg" width="280" height="280" alt="">
+              <img src="{{ url('../../frontend/images/katalog/detail1.jpg') }}" width="280" height="280" alt="">
             </a>
           </div>
           <div class="card-profile pt-5">
             <a class="katalog" href="{{ route('BromoInap') }}">
-              <img src="../../frontend/images/katalog/detail4.jpg" width="280" height="280" alt="">
+              <img src="{{ url('../../frontend/images/katalog/detail4.jpg') }}" width="280" height="280" alt="">
             </a>
           </div>
         </div>

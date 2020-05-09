@@ -8,7 +8,7 @@ Trip Kawah Ijen | Paket Tour Wisata Malang Bromo Murah Terbaik
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../../frontend/images/katalog/1D_Tour/jumbotron1.JPG" alt="First slide">
+        <img class="d-block w-100" src="{{ url('../../frontend/images/katalog/1D_Tour/jumbotron1.JPG') }}" alt="First slide">
       </div>
 
     </div>
@@ -133,18 +133,18 @@ Trip Kawah Ijen | Paket Tour Wisata Malang Bromo Murah Terbaik
       </div>
       <div class="col-lg-4">
         <div class="card-profile">
-          <a class="katalog" href=" ../../halaman/Tour2D1N/TourBromoInap.html">
-            <img src="../../frontend/images/katalog/detail4.jpg" width="280" height="280" alt="">
+          <a class="katalog" href="{{ route('BromoInap') }}">
+            <img src="{{ url('../../frontend/images/katalog/detail4.jpg') }}" width="280" height="280" alt="">
           </a>
         </div>
         <div class="card-profile pt-5">
-          <a class="katalog" href="  ../../halaman/Tour3D2N/TourBromoIjen&Baluran.html">
-            <img src="../../frontend/images/katalog/detail6.jpg" width="280" height="280" alt="">
+          <a class="katalog" href=" {{route('IjenBaluran')}}">
+            <img src="{{ url('../../frontend/images/katalog/detail6.jpg') }}" width="280" height="280" alt="">
           </a>
         </div>
         <div class="card-profile pt-5">
-          <a class="katalog" href=" ../../halaman/Tour1D/BromoMidnight.html">
-            <img src="../../frontend/images/katalog/detail3.jpg" width="280" height="280" alt="">
+          <a class="katalog" href=" {{ route('TourBromoMidnight') }}">
+            <img src="{{ url('../../frontend/images/katalog/detail3.jpg') }}" width="280" height="280" alt="">
           </a>
         </div>
       </div>

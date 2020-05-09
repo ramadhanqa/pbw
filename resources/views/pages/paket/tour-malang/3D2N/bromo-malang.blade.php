@@ -13,16 +13,16 @@ Tour Bromo & Malang Batu | Paket Tour Wisata Malang Bromo Murah Terbaik
     </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="../../frontend/images/Bannerumum.jpg" alt="First slide">
+          <img class="d-block w-100" src="{{ url('../../frontend/images/Bannerumum.jpg') }}" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="../../frontend/images/katalog/kembang.jpg" alt="Second slide" height="490px">
+          <img class="d-block w-100" src="{{ url('../../frontend/images/katalog/kembang.jpg') }}" alt="Second slide" height="490px">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="../../frontend/images/katalog/1D_Tour/jumbotron3.JPG" alt="Third slide" height="490px">
+          <img class="d-block w-100" src="{{ url('../../frontend/images/katalog/1D_Tour/jumbotron3.JPG') }}" alt="Third slide" height="490px">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="../../frontend/images/katalog/1D_Tour/jumbotron4.JPG" alt="Third slide" height="490px">
+          <img class="d-block w-100" src="{{ url('../../frontend/images/katalog/1D_Tour/jumbotron4.JPG') }}" alt="Third slide" height="490px">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -213,18 +213,18 @@ Tour Bromo & Malang Batu | Paket Tour Wisata Malang Bromo Murah Terbaik
         </div>
         <div class="col-lg-4">
           <div class="card-profile">
-            <a class="katalog" href="../../halaman/Tour3D2N/TourBromo&MalangBatu.html">
-              <img src="../../frontend/images/katalog/detail5.jpg" width="318.55" height="318.55" alt="">
+            <a class="katalog" href="{{ route('BromoMalang') }}">
+              <img src="{{ url('../../frontend/images/katalog/detail5.jpg') }}" width="318.55" height="318.55" alt="">
             </a>
           </div>
           <div class="card-profile pt-5">
-            <a class="katalog" href="../../halaman/Tour1D/BromoMidnight.html">
-              <img src="../../frontend/images/katalog/detail3.jpg" width="318.55" height="318.55" alt="">
+            <a class="katalog" href="{{ route('TourBromoMidnight') }}">
+              <img src="{{ url('../../frontend/images/katalog/detail3.jpg') }}" width="318.55" height="318.55" alt="">
             </a>
           </div>
           <div class="card-profile pt-5">
-            <a class="katalog" href="../../halaman/Tour2D1N/TourBromoInap.html">
-              <img src="../../frontend/images/katalog/detail4.jpg" width="318.55" height="318.55" alt="">
+            <a class="katalog" href="{{ route('BromoInap') }}">
+              <img src="{{ url('../../frontend/images/katalog/detail4.jpg') }}" width="318.55" height="318.55" alt="">
             </a>
           </div>
         </div>

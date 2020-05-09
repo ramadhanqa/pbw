@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\TourPackage;
+use App\Testimonial;
 
 class DetailController extends Controller
 {
     public function index(Request $request){
-        return view('pages.detail');
+    $testimonials = Testimonial::all();
+        return view('pages.detail',[
+            'testimonials' => $testimonials
+        ]);
     }
 }
