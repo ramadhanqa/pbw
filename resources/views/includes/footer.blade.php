@@ -17,6 +17,6 @@
 </div>
 {{-- Footer --}}
 <div class="row footer justify-content-center">
-    <p class="">© 2015 Jendela Wisata <a href="/halaman/Tour1D/OpenTripBromo.html">Open trip Bromo</a> |<a href="BromoMidnight.html"> Tour Bromo</a> |<a href="BromoMidnight.html"> Paket Wisata Bromo</a> |<a href="/index.html"> Paket Wisata Malang</a> |<a href="/index.html"> Paket Tour Malang Bromo</a> |<a href="/index.html"> Paket Tour Bromo Malang</a> All right reserved.
+    <p class="">© 2015 Jendela Wisata <a href="{{ route('OpenTrip') }}">Open trip Bromo</a> |<a href="{{ route('TourBromoMidnight') }}"> Tour Bromo</a> |<a href="{{ route('TourBromoMidnight') }}"> Paket Wisata Bromo</a> |<a href="{{ route('home') }}"> Paket Wisata Malang</a> |<a href="{{ route('BromoMalang') }}"> Paket Tour Malang Bromo</a> |<a href="{{ route('BromoMalang') }}"> Paket Tour Bromo Malang</a> All right reserved.
     </p>
   </div>
