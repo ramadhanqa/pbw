@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 use App\Booking;
 
 use App\Http\Requests\Admin\BookingRequest;
-
+use App\Testimonial;
 use App\TourPackage;
+use App\Packet;
 use Illuminate\Support\Str;
 
 class BookingUserController extends Controller
@@ -19,18 +20,20 @@ class BookingUserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    //return page index\admin\package travel dan mengambil items data dati db
+    //return page index\admin\package travel dan mengambil testimonialss data dati db
     //mengambil dari model Tour PACKAGE
     public function index()
     {
-        // $items = Booking::all();
+        // $testimonialss = Booking::all();
 
         // return view('pages.bookinguser.index',[
-        //     'items' => $items
+        //     'testimonialss' => $testimonialss
         // ]);
-        $tour_packages = TourPackage::all();
+        $testimonials = Testimonial::all();
+        $packets = Packet::all();
         return view('pages.bookinguser.create',[
-            'tour_packages' => $tour_packages
+            'packets' => $packets,
+            'testimonials' => $testimonials
         ]);
     }
 
@@ -42,9 +45,11 @@ class BookingUserController extends Controller
     // return pages admin\package-trave\create.blade
     public function create()
     {
-        $tour_packages = TourPackage::all();
+        $testimonials = Testimonial::all();
+        $packets = Packet::all();
         return view('pages.bookinguser.create',[
-            'tour_packages' => $tour_packages
+            'packets' => $packets,
+            'testimonials' => $testimonials
         ]);
     }
 
@@ -57,6 +62,7 @@ class BookingUserController extends Controller
     public function store(BookingRequest $request)
     {
         $data = $request->all();
+
 
         Booking::create($data);
         return redirect()->route('home');
@@ -82,10 +88,10 @@ class BookingUserController extends Controller
     public function edit($id)
     {
         // jika datanya ada akan dimunculin jika ga ada error 404
-        $item = Booking::findOrFail($id);
+        $testimonials = Booking::findOrFail($id);
 
         return view('pages.bookinguser.edit',[
-            'item' =>$item
+            'testimonials' =>$testimonials
         ]);
     }
 
@@ -100,8 +106,8 @@ class BookingUserController extends Controller
     {
         $data = $request->all();
          //fungsi update dan edit perbedaannya
-        $item = Booking::findOrFail($id);
-        $item->update($data);
+        $testimonials = Booking::findOrFail($id);
+        $testimonials->update($data);
         return redirect()->route('bookings.index');
     }
 
@@ -114,9 +120,9 @@ class BookingUserController extends Controller
     public function destroy($id)
     {
         //mencari idnya
-        $item = Booking::findOrFail($id);
+        $testimonials = Booking::findOrFail($id);
         //fungsi delete
-        $item->delete();
+        $testimonials->delete();
 
         return redirect()->route('bookings.index');
     }
