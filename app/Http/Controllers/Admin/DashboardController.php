@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Packet;
 use Illuminate\Http\Request;
-use App\TourPackage;
+use App\Booking;
+use App\Testimonial;
+
 
 class DashboardController extends Controller
 {
@@ -13,7 +16,9 @@ class DashboardController extends Controller
         // view dashboard admin.blade.phpo
         return view('pages.admin.dashboard',[
             //membuat variabel tour_pacakage , menghitung Total Tourpackage(tabel dari model)
-            'tour_package' => TourPackage::count(),
+            'packet' => Packet::count(),
+            'booking' => Booking::count(),
+            'testimonial' => Testimonial::count(),
         ]);
     }
 }

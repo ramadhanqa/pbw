@@ -26,9 +26,9 @@
 
       <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ route('gallery.index') }}">
-          <i class="fas fa-fw fa-images"></i>
-          <span>Galeri Travel</span></a>
+        <a class="nav-link" href="{{ route('testimonial.index') }}">
+          <i class="fas fa-fw fa-comment-alt"></i>
+          <span>Testimonial</span></a>
       </li>
 
       <!-- Nav Item - Dashboard -->

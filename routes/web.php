@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', 'HomeController@index' )
     ->name('home');
 
+
 Route::get('/profil', 'ProfilKamiController@index' )
     ->name('profil');
 
@@ -78,7 +79,7 @@ Route::prefix('admin')
         Route::resource('gallery', 'GalleryController');
         Route::resource('booking', 'BookingController');
         Route::resource('packet', 'PacketController');
-
+        Route::resource('testimonial', 'TestimonialController');
     });
 
 

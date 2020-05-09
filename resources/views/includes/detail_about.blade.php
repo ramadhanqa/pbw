@@ -21,34 +21,25 @@
           </a>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <p style="font-weight: lighter;">Seru banget mas, viewnya juga keren. Drivernya juga ramah dan baik, terimakasih yaa Jendela Wisata</p>
+              <p style="font-weight: lighter;">Tripnya Seru Banget ! Guidenya tadi sama mas Iwan, Orangnya seru banget dan lusu. Terimakasih banyak, kapan - kapan kalau mau ke Malang saya ikut Jendela Wisata lagi</p>
               <br>
                  <br>
                 <br>
                  <br>
                 <br>
-              <strong>Indah Cahya - Jakarta</strong>
+              <strong>Hanika Try Semarang</strong>
             </div>
+            @foreach ($testimonials as $testimonial)
             <div class="carousel-item">
-              <p style="font-weight: lighter;">Pelayanannya ramah dan berusaha memuaskan pelanggan dengan memberi lokasi setiap tmpt wisata spot yg terbaik...the best deh pokoke "duajempol" sukses selalu jendela wisata
+                <p style="font-weight: lighter;">{{ $testimonial->testimoni }}</p>
                 <br>
-                 <br>
-                <br>
-                 <br>
-                <br>
-                </p>
-
-              <strong>Tjanaddi KFR - Tangerang</strong>
-            </div>
-            <div class="carousel-item">
-              <p style="font-weight: lighter;">Mas Hary Jon Good Service(Driver)</p>
-              <br>
-                 <br>
-                <br>
-                 <br>
-                <br>
-              <strong>Ian Oktaviani - Pekan Baru</strong>
-            </div>
+                   <br>
+                  <br>
+                   <br>
+                  <br>
+                <strong>{{ $testimonial->nick }}</strong>
+              </div>
+              @endforeach
           </div>
         </div>
     </div>
