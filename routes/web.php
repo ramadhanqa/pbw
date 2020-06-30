@@ -78,7 +78,15 @@ Route::prefix('TourBanyuwangi')
             ->name('TrekIjen');
      
     });
-
+//peta Tour Banyuwangi Two Day
+Route::prefix('TourBanyuwangi')
+    ->namespace('Banyuwangi\TwoDay')
+    ->group(function(){
+        Route::get('/TwoDay/PesonaBanyuwangi', 'PesBanController@index')
+            ->name('PesBan');
+        Route::get('/TwoDay/PesonaIjen', 'PesIjController@index')
+            ->name('PesIj');
+    });
 
 //peta admin
 Route::prefix('admin')
