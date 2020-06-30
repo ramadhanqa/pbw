@@ -88,6 +88,25 @@ Route::prefix('TourBanyuwangi')
             ->name('PesIj');
     });
 
+//peta Tour Banyuwangi Three Day
+Route::prefix('TourBanyuwangi')
+    ->namespace('Banyuwangi\ThreeDay')
+    ->group(function(){
+        Route::get('/ThreeDay/EksplorasiBanyuwangi', 'EksBanController@index')
+            ->name('EksBan');
+        Route::get('/ThreeDay/KelilingBanyuwangi', 'KelBanController@index')
+            ->name('KelBan');
+    });
+    
+//peta Tour Banyuwangi Four Day
+Route::prefix('TourBanyuwangi')
+    ->namespace('Banyuwangi\FourDay')
+    ->group(function(){
+        Route::get('/FourDay/EksotiskaBanyuwangi', 'EksoBanController@index')
+            ->name('EksoBan');
+        Route::get('/FourDay/KelilingBanyuwangi2', 'KelBanyuController@index')
+            ->name('KelBanyu');
+    });
 //peta admin
 Route::prefix('admin')
     ->namespace('Admin')
