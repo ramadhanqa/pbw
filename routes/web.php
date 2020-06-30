@@ -67,6 +67,19 @@ Route::prefix('TourBromoMalang')
             ->name('RequestTrip');
     });
 
+
+//peta Tour Banyuwangi One Day
+Route::prefix('TourBanyuwangi')
+    ->namespace('Banyuwangi\OneDay')
+    ->group(function(){
+        Route::get('/OneDay/Menjangan&Tabuhan', 'MenjanganTabController@index')
+            ->name('MenjanganTab');
+        Route::get('/OneDay/TrekkingKawahIjen', 'TrekIjenController@index')
+            ->name('TrekIjen');
+     
+    });
+
+
 //peta admin
 Route::prefix('admin')
     ->namespace('Admin')
