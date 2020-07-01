@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Bulan Mei 2020 pada 07.39
+-- Waktu pembuatan: 01 Jul 2020 pada 19.33
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.5
 
@@ -55,12 +55,13 @@ INSERT INTO `bookings` (`id`, `nama`, `email`, `no_telp`, `usia`, `no_ktp`, `tgl
 (2, 'ailwjdl', 'rafiqori@gmail.com', 123, 123, 91919, '2020-12-31', '1', 'awdwa', 1, 'awdwad', 'awdwad', 'awdwad', '2020-05-07 15:02:58', '2020-05-07 08:19:14', '2020-05-07 15:02:58'),
 (3, 'adwaild', 'raaaa@gmail.com', 12312, 123, 12312, '2019-12-01', 'One Day Tour', '1231adwd', 3, 'awdawd', 'dawd', 'dawdd', '2020-05-07 15:03:05', '2020-05-07 08:21:19', '2020-05-07 15:03:05'),
 (4, 'tess', 'tess@gmail.com', 1231, 21, 1231, '2020-01-01', 'One Day Tour', '123awd', 2, 'awdwd', 'awdwad', 'awda', '2020-05-07 14:58:25', '2020-05-07 14:58:19', '2020-05-07 14:58:25'),
-(5, 'robet', 'ram@gmail.com', 213123, 12, 12312, '2020-12-30', 'One Day Tour', 'awdwad', 12, 'wadawdawd', 'awdwad', 'dawdawd', NULL, '2020-05-07 15:03:59', '2020-05-07 15:03:59'),
+(5, 'robet', 'ram@gmail.com', 213123, 12, 12312, '2020-12-30', 'One Day Tour', 'awdwad', 12, 'wadawdawd', 'awdwad', 'dawdawd', '2020-07-01 08:42:50', '2020-05-07 15:03:59', '2020-07-01 08:42:50'),
 (6, 'awdawdawd', 'awdawd@gmail.com', 23123213, 1213, 123123, '2022-03-03', 'One Day Tour', 'awdwad', 12, 'awdawd', 'dwawdawd', 'dawdwa', '2020-05-07 20:17:31', '2020-05-07 15:04:30', '2020-05-07 20:17:31'),
-(7, 'tes', 'ramadhan@gmail.com', 123123, 1212, 1212, '2021-01-01', 'One Day Tour', 'awdiljawdil', 12, 'dawijdliawj', 'adilwjdilj', 'laiwjdilj', NULL, '2020-05-07 20:43:51', '2020-05-07 20:43:51'),
+(7, 'tes', 'ramadhan@gmail.com', 123123, 1212, 1212, '2021-01-01', 'One Day Tour', 'awdiljawdil', 12, 'dawijdliawj', 'adilwjdilj', 'laiwjdilj', '2020-07-01 08:42:54', '2020-05-07 20:43:51', '2020-07-01 08:42:54'),
 (8, 'wowo', 'woow@gmail.com', 123123, 12, 1212, '2020-12-02', 'One Day Tour', 'awlkdlkajwlidj', 1212, 'awijdliawjd', 'aliawjdlijawd', 'liadjwdlij', NULL, '2020-05-07 20:46:45', '2020-05-07 20:46:45'),
 (9, 'tess', 'tsss@gmail.com', 123, 1231, 12321, '2020-06-01', 'One Day Tour', 'alwijdliawj', 12, 'dalijwdlij', 'aliwjdilawjd', 'awliwjdliawjd', NULL, '2020-05-07 20:47:30', '2020-05-07 20:47:30'),
-(10, 'iwiw', 'iwi@gmail.com', 1231, 1231, 213123, '2020-06-01', 'Bromo Midnight', 'ilawjdlwaij', 21, 'alwijdlij', 'dlijawdlij', 'laiwjdliawj', NULL, '2020-05-07 22:02:03', '2020-05-07 22:02:03');
+(10, 'iwiw', 'iwi@gmail.com', 1231, 1231, 213123, '2020-06-01', 'Bromo Midnight', 'ilawjdlwaij', 21, 'alwijdlij', 'dlijawdlij', 'laiwjdliawj', '2020-05-09 04:11:11', '2020-05-07 22:02:03', '2020-05-09 04:11:11'),
+(11, 'robet', 'rafi@gmail.com', 1029012, 21, 10920192, '2020-07-01', 'Ijen & Menjangan', 'waldiwja', 121, 'lwaijdilawjd', 'liwajdliawj', 'walijdlijad', NULL, '2020-07-01 08:44:13', '2020-07-01 08:44:13');
 
 -- --------------------------------------------------------
 
@@ -194,7 +195,9 @@ CREATE TABLE `testimonials` (
 
 INSERT INTO `testimonials` (`id`, `nick`, `testimoni`, `deleted_at`, `created_at`, `updated_at`) VALUES
 (1, 'Robet', 'sungguh wow', NULL, '2020-05-08 20:46:54', '2020-05-08 20:46:54'),
-(2, 'Amril', 'Uwuuu deh', NULL, '2020-05-08 21:51:42', '2020-05-08 21:51:42');
+(2, 'Amril', 'Uwuuu deh', NULL, '2020-05-08 21:51:42', '2020-05-08 21:51:42'),
+(3, 'Erwan', 'Hohhooho', '2020-05-09 04:11:32', '2020-05-09 04:11:30', '2020-05-09 04:11:32'),
+(4, 'Robet', 'Uwuuu', NULL, '2020-07-01 08:58:42', '2020-07-01 08:58:42');
 
 -- --------------------------------------------------------
 
@@ -277,7 +280,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `roles`, `username`) VALUES
-(1, 'Ramadhan QA', 'rama@gmail.com', NULL, '$2y$10$gVj600qT6RCJA/Mzk9AVWODyISYs6sdXC9lqiwpLCbFSiT1o.L/I.', NULL, '2020-05-06 20:49:41', '2020-05-06 20:49:41', 'ADMIN', 'ramadhan');
+(1, 'Ramadhan QA', 'rama@gmail.com', NULL, '$2y$10$.aZlcTpurqh.HiP7hKk6t.meH0.Vw5t9guQX5qIdVIn39bz2H8lM.', 'w5xkSWRrNe92PDXbTlO8fCVLjg3m3Cb2rJV45gBDFCcCp9QqFYY27cJhs8jl', '2020-05-06 20:49:41', '2020-07-01 08:40:49', 'ADMIN', 'ramadhan'),
+(2, 'amril', 'amril@gmail.com', '2020-07-01 08:49:21', '$2y$10$ooYp3R6L3Cg9URTsPI3mtOdZHXs9lzLDWQU7atfyVdPF3Znlkz3Nq', NULL, '2020-07-01 08:49:10', '2020-07-01 08:49:21', 'ADMIN', 'amril');
 
 --
 -- Indexes for dumped tables
@@ -358,7 +362,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
@@ -388,7 +392,7 @@ ALTER TABLE `packets`
 -- AUTO_INCREMENT untuk tabel `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tour_packages`
@@ -412,7 +416,7 @@ ALTER TABLE `transaction_details`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
