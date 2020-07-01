@@ -1,0 +1,84 @@
+css :
+folder script -> main.js
+folder styles -> main.scss
+wacth live
+go live
+
+instagram feed : https://www.youtube.com/watch?v=zw26D1Ko-3w
+https://apps.elfsight.com/panel/applications/instashow/
+
+||Back end||
+
+Route : membuat peta website kita
+Controller : menaruh logika website kita
+Request : menerima permintaan data dari user
+Response : memberikan hasil data
+Views & Blade : tampilan views
+Validation : memvalidasi data yang masuk ke website kita
+Migration : membuat struktur tabel
+Elequent ORM : digunakan untuk membuat data base dengan mudah
+
+create database dulu -> nama sesuaiin
+utf8mb4_general_ci -> tipe database laravel
+
+{setting database dan mailtrap pada env.}
+
+
+||cara update xamp version||
+souceforge.net => xampp windows version . download portable.zip
+rename apache & php yg lama , copy apache & php yg baru
+buka file php.ini -> rename
+xampp sesuai folder tempatnya
+
+
+||template admin||
+startboostrap.com -> SBAdmin2
+
+setelah membuat blade.php -> selalu buat controller
+php artisan make:controller
+
+font-awesome logo
+
+Migration -> migrate -> masuk ke database
+middleware satpam validasi nya .
+
+//middleware berisi autentikasi login register dll semuanya satu paket
+make middleware -> php artisan make:middleware isAdmin
+diatur di Kernel (ditambahin sesuai middlewarenya) -> route middleware
+
+install dan mengatur authen -> composer require laravel/ui --dev
+-> php artisan ui vue --auth
+
+cek tiap blade = controller .
+fillable itu isian
+
+//Model
+php artisan make:model TourPackage
+user.php -> di folder http itu adalah sebuah model -> logik
+
+//Form Request
+validasi dan inputan
+php artisan make:request Admin\\TourPackageRequest
+untuk modal bagian inputan dari user. jadi harus di include dalam Controller
+hanya inputan yg dimasukkan dalam request ke databases
+slug -> bukan inputan tapi otomatis masuk ke database lewat copy paste titlte
+
+//tahap Index membuat tabel admin :
+resource(untuk membuat crud)
+php artisan make:controller Admin\\TravelPackageController --resource
+model berisi create lengkap edit delete dll
+di include dalam controller
+
+Tahap :
+Model - > Form Request (validasi inputan) -> Controller -> Create -> Update -> Delete -> cek di web.php (route)
+
+nb:
+untuk images : agar storage ada di public dan terbaca maka dibuatkan folder
+dengan : php artisan storage:link
+
+relasi antar tabel di taruh di kedua model
+
+id amril admin:
+email : amril@gmail.com
+password : amril17@
+
