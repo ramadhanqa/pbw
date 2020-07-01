@@ -1,159 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Banyuwangi 2 | Paket Tour Wisata Malang Bromo Murah Terbaik</title>
-    <!-- whatsapp -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-6625034e-5a6a-4c5d-a51b-73dca8b2c4f7"></div>
+@extends('layouts.detail')
+@section('title')
+Explore Banyuwangi 2 | Paket Tour Wisata Malang Bromo Murah Terbaik
+@endsection
+@section('content')
 
-    <!-- animated.css bootnav -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- css ditaruh di atas , bagian head -->
-    <link rel="stylesheet" href="../../frontend/libraries/bootstrap/css/bootstrap.css"/>
-    <!-- bootnav -->
-    <link rel="stylesheet" href="../../frontend/libraries/bootstrap/css/bootnavbar.css">
-    <!-- styleing css go lice sass -->
-    <link rel="stylesheet" href="../../frontend/styles/main.css">
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <!-- navbar info -->
-    <div class="row head justify-content-center">
-      <p class="">Office : 03415051441 | WhatsApp : 08113507073 | Mobile : 08113507073</p>
-    </div>
-    <!-- navbar menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="main_navbar">
-      <a class="navbar-brand" href="../../index.html">
-        <img src="../../frontend/images/logo.png" width="330" height="60" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-4 ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="../../profile-kami.html">Profil Kami <span class="sr-only">(current)</span></a>
-            </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Tour Malang Bromo<span class="sr-only">(current)</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li class="nav-item dropdown">
-                              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Paket Tour 1D
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                  <li><a class="dropdown-item" href="../../halaman/Tour1D/BromoMidnight.html">Paket Tour Bromo Midnight</a></li>
-                                  <li><a class="dropdown-item" href="../../halaman/Tour1D/TourKawahIjen.html">Paket Tour Bromo Kawah Ijen</a></li>
-                                  <li><a class="dropdown-item" href="../../halaman/Tour1D/MenjanganTabuhan.html">Paket Tour Menjangan& Tabuhan</a></li>
-                                  <li><a class="dropdown-item" href="../../halaman/Tour1D/OpenTripBromo.html">Open Trip Bromo</a></li>
-                              </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Paket Tour 2D1N
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li><a class="dropdown-item" href="../../halaman/Tour2D1N/TourBromoInap.html">Paket Tour Bromo Inap</a></li>
-                                <li><a class="dropdown-item" href="../../halaman/Tour2D1N/TourBromo&KotaBatu.html">Paket Tour Bromo & Kota Batu</a></li>
-                                <li><a class="dropdown-item" href="../../halaman/Tour2D1N/TourKawahijen&Baluran.html">Paket Tour Kawah Ijen & Baluran</a></li>
-                                <li><a class="dropdown-item" href="../../halaman/Tour2D1N/TourKawahijen&Menjangan.html">Paket Tour Ijen & Menjangan</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-                              aria-haspopup="true" aria-expanded="false">
-                              Paket Tour 3D2N
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                              <li><a class="dropdown-item" href="../../halaman/Tour3D2N/TourBromo&MalangBatu.html">Paket Tour Bromo & Malang Batu</a></li>
-                              <li><a class="dropdown-item" href="../../halaman/Tour3D2N/TourBromoIjen&Baluran.html">Paket Tour Bromo Ijen & Baluran</a></li>
-                              <li><a class="dropdown-item" href="../../halaman/Tour3D2N/TourBaluran&Ijen.html">Paket Tour Baluran & Ijen</a></li>
-                              <li><a class="dropdown-item" href="../../halaman/Tour3D2N/RequsetTrip.html">Reques Trip</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Tour Banyuwangi<span class="sr-only">(current)</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="nav-item dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        One Day Tour
-                    </a>
-                    <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                        <li><a class="dropdown-item" href="../../halaman/OneDayTour/TrekingKawahIjen.html">Treking Kawah Ijen</a></li>
-                        <li><a class="dropdown-item" href="../../halaman/OneDayTour/EksplorPulauMenjangan&Tabuhan.html">Explore Pulau Menjangan dan Tabuhan</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Paket Tour 2 Hari 1 Malam
-                  </a>
-                  <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                      <li><a class="dropdown-item" href="../../halaman/PaketTour2H1M/PesonaKawahIjen.html">Pesona Kawah Ijen</a></li>
-                      <li><a class="dropdown-item" href="../../halaman/PaketTour2H1M/PesonaBanyuwangi.html">Pesona Banyuwangi</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Paket Tour 3 Hari 2 Malam
-                </a>
-                <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                    <li><a class="dropdown-item" href="../../halaman/PaketTour3H2M/EksplorBanyuwangi.html">Explore Banyuwangi</a></li>
-                    <li><a class="dropdown-item" href="../../halaman/PaketTour3H2M/KelilingBanyuwangi.html">Keliling Banyuwangi</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Paket Tour 4 Hari 3 Malam
-                </a>
-                <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                    <li><a class="dropdown-item" href="../../halaman/PaketTour4H3M/KelilingBanyuwangi.html">Menjelajahi Banyuwangi</a></li>
-                    <li><a class="dropdown-item" href="../../halaman/PaketTour4H3M/EksotiskaBanyuwangi.html">Exotisca Banyuwangi</a></li>
-                </ul>
-            </li>
-                </ul>
-            </li>
-            <!-- Navbarbaru -->
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact Us
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a href="../../Booking.html" class="dropdown-item">Booking</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-              </a>
-              <ul class="dropdown-menu left" aria-labelledby="navbarDropdown">
-                <input class="form-control form-control-sm mr-0 w-0" type="text" placeholder="Search" aria-label="Search">
-              </ul>
-            </li>
-          </ul>        
-      </div>
-  </nav>
     <!-- Jumbotron -->
     <div id="carouselExampleIndicators" class=" carousel slide" data-ride="carousel" style="height:600px;">
       <ol class="carousel-indicators" style="height: 800px;">
@@ -163,7 +13,7 @@
       </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../../frontend/images/Trekking-Banyuwangi.jpg" alt="First slide">
+            <img class="d-block w-100" src="{{url('../../frontend/images/Trekking-Banyuwangi.jpg')}}" alt="First slide">
           </div>
          
         </div>
@@ -369,18 +219,18 @@
           </div>
           <div class="col-lg-4">
             <div class="card-profile">
-              <a class="katalog" href=" ../../halaman/Tour2D1N/TourBromo&KotaBatu.html">
-                <img src="../../frontend/images/katalog/detail5.jpg" width="298.55" height="298.55" alt="">
+              <a class="katalog" href="  {{route('BromoBatu')}}">
+                <img src="{{url('../../frontend/images/katalog/detail5.jpg')}}" width="280" height="280" alt="">
               </a>
             </div>
             <div class="card-profile pt-5">
-              <a class="katalog" href=" ../../halaman/Tour1D/BromoMidnight.html">
-                <img src="../../frontend/images/katalog/detail3.jpg" width="298.55" height="298.55" alt="">
+              <a class="katalog" href=" {{route('TourBromoMidnight')}}">
+                <img src="{{url('../../frontend/images/katalog/detail3.jpg')}}" width="280" height="280" alt="">
               </a>
             </div>
             <div class="card-profile pt-5">
-              <a class="katalog" href=" ../../halaman/Tour2D1N/TourBromoInap.html">
-                <img src="../../frontend/images/katalog/detail4.jpg" width="298.55" height="298.55" alt="">
+              <a class="katalog" href=" {{route('BromoInap')}}">
+                <img src="{{url('../../frontend/images/katalog/detail4.jpg')}}" width="280" height="280" alt="">
               </a>
             </div>
           </div>
@@ -388,151 +238,4 @@
 
       </main>
       
-
-    <!-- About -->
-    <div class="row three"  >
-      <div class="col-lg-7 pl-lg-5">
-        <div class="card card-instgram">
-          <h3 style="font-weight: lighter;">Our Instagram</h3>
-          <img class="rounded-circle" width="65px" height="65px" src="../../frontend/images/logoig.JPG" alt=""><p style="font-weight: lighter; padding-left: 90px; width: 1000px; margin-top: -50px; padding-bottom: 30px;">jendelawisata</p>
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-bbb74814-eb19-4ec3-aa2f-5541b877b9e7"></div>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="card-instagram card-testimoni">
-          <h3 style="font-weight: lighter;">Testimonials</h3>
-          <div id="carouselExampleIndicators" class=" carousel jumb-testimoni slide" data-ride="carousel">
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="fa fa-chevron-circle-left" style="margin-left: 890px; margin-top: -425px;" ></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              
-              <span class="fa fa-chevron-circle-right" style="margin-top: -425px;" ></span>
-            </a>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p style="font-weight: lighter;">Tripnya Seru Banget ! Guidenya tadi sama mas Iwan, Orangnya seru banget dan lusu. Terimakasih banyak, kapan - kapan kalau mau ke Malang saya ikut Jendela Wisata lagi</p>
-                <br>
-                <br>
-               <br>
-                <br>
-               <br>
-                <strong>Hanika Try Semarang</strong>
-              </div>
-              <div class="carousel-item">
-                <p style="font-weight: lighter;">Pelayanannya ramah dan berusaha memuaskan pelanggan dengan memberi lokasi setiap tmpt wisata spot yg terbaik...the best deh pokoke "duajempol" sukses selalu jendela wisata 
-                  <br>
-                   <br>
-                  <br>
-                   <br>
-                  <br>
-                  </p>
-              
-                <strong>Tjanaddi KFR - Tangerang</strong>
-              </div>
-              <div class="carousel-item">
-                <p style="font-weight: lighter;">Mas Hary Jon Good Service(Driver)</p>
-                <br>
-                   <br>
-                  <br>
-                   <br>
-                  <br>
-                <strong>Ian Oktaviani Bandung</strong>
-              </div>
-              <!-- <div class="carousel-item">
-                <p>Tripnya Seru Banget ! Guidenya tadi sama mas Iwan, Orangnya seru banget dan lusu. Terimakasih banyak, kapan - kapan kalau mau ke Malang saya ikut Jendela Wisata lagi</p>
-                <hr>
-                <hr>
-                <strong>Hanika Try Semarang</strong>
-              </div> -->
-            </div>
-           
-          </div>
-      </div>
-    </div>
-    </div>
-    
-    <!-- Rating -->
-    <div class="row rating">
-      <form action="#" id="rating-form-4-1">
-      <p id="commentt" style="font-weight: lighter; margin-left: -12px;">Nilai Kualitas Konten</p>
-      <div id="starmark2" class="item">
-        <span style="font-weight: bold; margin-left: -22px;">Berikan Rating</span>
-        <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:12px;cursor:pointer;"  class="fa fa-star checked"></span>
-        <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:12px;cursor:pointer;" class="fa fa-star "></span>
-        <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:12px;cursor:pointer;" class="fa fa-star "></span>
-        <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:12px;cursor:pointer;" class="fa fa-star"></span>
-        <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:12px;cursor:pointer;" class="fa fa-star"></span>
-        <br/>
-        
-        <button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px; border-width: 1px; border-color: grey; margin-bottom: 20px; margin-left: -22px;" class="btn btn-default save-rating">Kirim Rating</button>
-    </form>
-    </div>
-  </div>
-    <!-- Footer -->
-      <div class="row footer justify-content-center">
-        <p class="">© 2015 Jendela Wisata <a href="/halaman/Tour1D/OpenTripBromo.html">Open trip Bromo</a> |<a href="/halaman/Tour1D/BromoMidnight.html"> Tour Bromo</a> |<a href="/halaman/Tour1D/BromoMidnight.html"> Paket Wisata Bromo</a> |<a href="/index.html"> Paket Wisata Malang</a> |<a href="/index.html"> Paket Tour Malang Bromo</a> |<a href="/index.html"> Paket Tour Bromo Malang</a> All right reserved.
-        </p>
-      </div>
-   
-
-    <!-- script jquery, file download di jquery harus ditaruh di atas boostrap -->
-    <script src="../../frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
-    <!-- popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <!-- js di taruh di bagian body , link script -->
-    <script src="../../frontend/libraries/bootstrap/js/bootstrap.js"></script>
-
-    <!-- bootnavbar -->
-    <script src="../../frontend/libraries/bootstrap/js/bootnavbar.js" ></script>
-    <script>
-        $(function () {
-            $('#main_navbar').bootnavbar({
-              //options
-
-              //animation: false
-
-            });
-        })
-    </script>
-  <script>
-    var count;
-    
-    function starmark(item)
-    {
-    count=item.id[0];
-    sessionStorage.starRating = count;
-    var subid= item.id.substring(1);
-    for(var i=0;i<5;i++)
-    {
-    if(i<count)
-    {
-    document.getElementById((i+1)+subid).style.color="orange";
-    }
-    else
-    {
-    document.getElementById((i+1)+subid).style.color="black";
-    }
-    
-    
-    }
-    
-    }
-    
-    function result()
-    {
-      
-    //Rating : Count
-    //Review : Comment(id)
-    document.getElementById("commentt").innerHTML = "√Terima Kasih Telah Memberi Nilai : "+count+"/5";
-    var x = document.getElementById("starmark2");
-if (x.style.display === "none") {
-  x.style.display = "block";
-} else {
-  x.style.display = "none";
-}
-    }
-    </script>
-</body>
-</html>
+@endsection
