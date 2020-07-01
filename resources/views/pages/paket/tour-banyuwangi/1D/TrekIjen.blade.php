@@ -13,7 +13,7 @@ Trekking Kawah Ijen | Paket Tour Wisata Malang Bromo Murah Terbaik
       </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../../frontend/images/Trekking-Banyuwangi.jpg" alt="First slide" width="1349">
+            <img class="d-block w-100" src="{{url('../../frontend/images/Trekking-Banyuwangi.jpg')}}" alt="First slide" width="1349">
           </div>
          
         </div>
