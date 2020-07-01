@@ -76,8 +76,8 @@
                       One Day Tour
                   </a>
                   <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                      <li><a class="dropdown-item" href="halaman/OneDayTour/TrekingKawahIjen.html">Treking Kawah Ijen</a></li>
-                      <li><a class="dropdown-item" href="halaman/OneDayTour/EksplorPulauMenjangan&Tabuhan.html">Explore Pulau Menjangan dan Tabuhan</a></li>
+                      <li><a class="dropdown-item" href="{{route('TrekIjen')}}">Treking Kawah Ijen</a></li>
+                      <li><a class="dropdown-item" href="{{route('MenjanganTab')}}">Explore Pulau Menjangan dan Tabuhan</a></li>
                   </ul>
               </li>
               <li class="nav-item dropdown">
@@ -86,8 +86,8 @@
                     Paket Tour 2 Hari 1 Malam
                 </a>
                 <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                    <li><a class="dropdown-item" href="halaman/PaketTour2H1M/PesonaKawahIjen.html">Pesona Kawah Ijen</a></li>
-                    <li><a class="dropdown-item" href="halaman/PaketTour2H1M/PesonaBanyuwangi.html">Pesona Banyuwangi</a></li>
+                    <li><a class="dropdown-item" href="{{route('PesIj')}}">Pesona Kawah Ijen</a></li>
+                    <li><a class="dropdown-item" href="{{route('PesBan')}}">Pesona Banyuwangi</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -96,8 +96,8 @@
                   Paket Tour 3 Hari 2 Malam
               </a>
               <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                  <li><a class="dropdown-item" href="halaman/PaketTour3H2M/EksplorBanyuwangi.html">Explore Banyuwangi</a></li>
-                  <li><a class="dropdown-item" href="halaman/PaketTour3H2M/KelilingBanyuwangi.html">Keliling Banyuwangi</a></li>
+                  <li><a class="dropdown-item" href="{{route('EksBan')}}">Explore Banyuwangi</a></li>
+                  <li><a class="dropdown-item" href="{{route('KelBan')}}">Keliling Banyuwangi</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -106,8 +106,8 @@
                   Paket Tour 4 Hari 3 Malam
               </a>
               <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
-                  <li><a class="dropdown-item" href="halaman/PaketTour4H3M/KelilingBanyuwangi.html">Menjelajahi Banyuwangi</a></li>
-                  <li><a class="dropdown-item" href="halaman/PaketTour4H3M/EksotiskaBanyuwangi.html">Exotisca Banyuwangi</a></li>
+                  <li><a class="dropdown-item" href="{{route('EksoBan')}}">Menjelajahi Banyuwangi</a></li>
+                  <li><a class="dropdown-item" href="{{route('KelBanyu')}}">Exotisca Banyuwangi</a></li>
               </ul>
           </li>
               </ul>
