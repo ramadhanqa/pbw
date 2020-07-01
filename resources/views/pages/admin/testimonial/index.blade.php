@@ -31,9 +31,9 @@
                                 <td>{{ $item->nick }}</td>
                                 <td>{{ $item->testimoni }}</td>
                                 <td>
-                                    <a href="{{ route('testimonial.edit', $item->id) }}" class="btn btn-info">
+                                    {{-- <a href="{{ route('testimonial.edit', $item->id) }}" class="btn btn-info">
                                         <i class="fa fa-pencil-alt"></i>
-                                    </a>
+                                    </a> --}}
                                     <form action="{{ route('testimonial.destroy', $item->id) }}" method="POST" class="d-inline">
                                         @csrf
                                         @method('delete')
