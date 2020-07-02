@@ -6,7 +6,7 @@
 {{-- mengambil data dengan {{ $item-> datanya.. }} --}}
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Edit Booking {{ $item->title }}</h1>
+        <h1 class="h3 mb-0 text-gray-800">Edit Packet {{ $item->title }}</h1>
         </div>
 
         {{-- menambahkan erorr --}}
@@ -24,10 +24,14 @@
         <div class="card shadow">
             <div class="card-body">
                 {{-- ganti route -> update bagian id , + methodee PUT --}}
-                <form action="{{ route('booking.update', $item->id) }}" method="POST">
+                <form action="{{ route('packet.update', $item->id) }}" method="POST">
                 @method('PUT')
                 @csrf
                     <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" name="title" placeholder="title" value="{{ $item->title }}">
+                    </div>
+                    {{-- <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" placeholder="nama" value="{{ $item->nama }}">
                     </div>
@@ -83,7 +87,7 @@
                         <label for="pesan" style="font-weight: bold; padding-bottom: -15px;">Pesan:</label>
                         <br>
                         <textarea style="resize: both;" rows="10" class="form-control d-block w-100" style="font-weight: bold;">{{ $item->pesan }}</textarea>
-                    </div>
+                    </div> --}}
                     <div class="item">
                     <button type="submit" class="btn btn-primary btn-block">
                         Ubah
