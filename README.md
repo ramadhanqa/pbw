@@ -2,6 +2,10 @@
 Nama : Ramadhan Qoridhatul Alfarizi (180441100098)
        MUHAMMAD HASBUNALLAH AMRIL SOBRI (180441100140)
 
+ADMIN : 
+ID: amril@gmail.com
+pw : amril17@
+
 web yang dicontoh : jendela-wisata.com
 
 
